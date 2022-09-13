@@ -10,7 +10,7 @@
 # Data de criação: 07/2017
 
 import os
-
+import sys
 import util
 import glob
 from termcolor import colored
@@ -65,8 +65,10 @@ class vhdlScript_cocotb(object):
 
     def show_results(self):
         for i in range(len(self.runned_test)):
+            err = 0
             if self.result[i] == 'Passed':
                 print('{:25s}: '.format(self.runned_test[i]) + colored('Passed', 'green'))
             else:
                 print('{:25s}: '.format(self.runned_test[i]) + colored('Failed', 'red'))
-    
+                err = 1
+        sys.exit(err)  
