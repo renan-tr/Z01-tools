@@ -30,7 +30,7 @@ END = "\n"
 ######################################################
 
 CDF_ULA_PATH = TOOL_PATH + '/sof/Z011-ULA.cdf'
-CDF_Z01_PATH = TOOL_PATH + '/sof/Z011.cdf'
+CDF_Z01_PATH = TOOL_PATH + '/sof/DE0_CV_Default.cdf'
 
 ######################################################
 
