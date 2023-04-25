@@ -5,11 +5,11 @@
 import sys, os, shutil, subprocess
 import config
 
-if (config.NOTIFY_ENABLE):
+#if (config.NOTIFY_ENABLE):
     # import GdkPixbuf module
-    import gi
-    gi.require_version("Notify", "0.7")
-    from gi.repository import Notify, GdkPixbuf
+    #import gi
+    #gi.require_version("Notify", "0.7")
+    #from gi.repository import Notify, GdkPixbuf
 
 def testeAssemblySimulateNotif(error, log):
     # inicializa notificacao
